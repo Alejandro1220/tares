@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Prueba sucesiones</title>
+	<style type="text/css">
+	*{
+		padding: 0px;
+		margin: 0px;
+    }
+		.ppa{
+			position: absolute;
+			top: -15%;
+			left: 0%;
+			width: 220px;
+			height: 30px;
+			background-color:;
+		
+		}
+		.pa{
+			position: absolute;
+			display: none;
+		   top: 27%;
+		   left: 38%;
+		font-family: arial;
+		font-size: 20px;
+		width: 450px;
+		align-items: center;
+		 justify-content: center;
+		}
+
+		.ssa{
+			position: absolute;
+			top: -15%;
+			left: 0%;
+			width: 220px;
+			height: 30px;
+			background-color:;
+		
+		}
+		.sa{
+			position: absolute;
+			display: none;
+		   top: 27%;
+		   left: 38%;
+		font-family: arial;
+		font-size: 20px;
+		width: 450px;
+		align-items: center;
+		 justify-content: center;
+		}
+	
+	.tta{
+			position: absolute;
+			top: -15%;
+			left: 0%;
+			width: 220px;
+			height: 30px;
+			background-color:;
+		
+		}
+		.ta{
+			position: absolute;
+			display: none;
+		   top: 27%;
+		   left: 38%;
+		font-family: arial;
+		font-size: 20px;
+		width: 450px;
+		align-items: center;
+		 justify-content: center;
+		}
+
+		.cca{
+			position: absolute;
+			top: -15%;
+			left: 0%;
+			width: 220px;
+			height: 30px;
+			background-color:;
+		
+		}
+		.sa{
+			position: relative;
+			top: -100px;
+			left: 700px;
+		}
+				.pa{
+			position: relative;
+			top: 175px;
+			left: 300px;
+		}
+
+		.ca{
+			position: absolute;
+			display: none;
+		   top: 27%;
+		   left: 38%;
+		font-family: arial;
+		font-size: 20px;
+		width: 450px;
+		align-items: center;
+		 justify-content: center;
+		}
+
+		.rr{
+			font-family: arial;
+				font-size: 20px;
+		}
+
+		.tit{
+			position: absolute;
+			font-size: 33px;
+			top: 5%;
+			left: 36%;
+			font-family: arial;
+		}
+		.tit2{
+			position: absolute;
+			font-size: 20px;
+			top: 9.5%;
+			left: 38%;
+			font-family: arial;
+		}
+	</style>
+</head>
+
+<body onload="recar()">
+	<script>
+	    	function recar() 
+	    	{
+    		nal=parseInt((Math.random() * (4-1) +1));
+    		console.log(nal);
+    		if (nal==1)
+    		 {
+             pal.style.display="block";
+               sal.style.display="block";
+    		}
+    		if (nal==2) 
+    		{
+              cal.style.display="block";
+    		}
+    		    		if (nal==3) 
+    		{
+             ter.style.display="block";
+    		}
+    		
+    	}
+</script>
+
+
+<div class="tit">Exámen sucesiones</div>
+
+
+<div class="pa" id="pal">
+	<div class="ecua">an=a1+(n-1)*d
+		<br>
+		<br>
+
+	</div>
+
+	<div class="ac1">Calcular distancia</div>
+	<div class="dat1">
+		Término cualquiera (an): 7
+		<br>
+		<br>
+		Término inicial (a1): 3
+		<br>
+		<br>
+		Posición (n): 3
+		<br>
+		<br>
+		Distancia (d): ?
+
+	</div>
+
+     <form>
+	     <input type="number" id="r1" placeholder="Respuesta">
+     </form>
+     <div class="rr" id="res"></div>
+<button class="enviar" onclick="a1()">Enviar</button>
+
+    <script>
+    	function a1()
+    	{
+    		r1=parseInt(r1.value)
+    		if (r1==2)
+    		 {
+    		 	res.innerHTML="<div class='rr'>Respuesta correcta</div>";
+    		 }
+    		 else
+    		 {
+    		 	res.innerHTML="<div class='rr'>Respuesta incorrecta</div>";
+    		 }
+    	}
+    </script>
+
+ </div>   
+
+
+ 
+<div class="sa" id="sal">
+	<div class="ecua">
+		<br>
+		<br>
+<div class="ac2">Calcular término cualquiera</div>
+	<div class="dat2">
+		Término cualquiera (an): ?
+		<br><br>
+		Término inicial (a1): 2
+		<br><br>
+		Posición (n): 9
+		<br><br>
+		Distancia (d): 4
+
+	</div>
+
+     <form>
+	     <input type="number" id="r2" placeholder="Respuesta">
+     </form>
+     <div class="rr" id="res2"></div>
+<button class="enviar" onclick="a2()">Enviar</button>
+
+    <script>
+
+    	function a2()
+    	{
+    		r2=parseInt(r2.value)
+    		if (r2==34)
+    		 {
+    		 	res2.innerHTML="<div class='rr'>Respuesta correcta</div>";
+    		 }
+    		 else
+    		 {
+    		 	res2.innerHTML="<div class='rr'>Respuesta incorrecta</div>";
+    		 }
+    	}
+    </script>
+</div>
+</div>
+
+
+
+
+<div class="ta" id="ter">
+	<div class="ecua">an=a1+(n-1)*d
+		<br>
+		<br>
+<div class="ac3">Calcular la posición del término cualquiera</div>
+	<div class="dat3">
+		Término cualquiera (an): 12
+		<br><br>
+		Término inicial (a1): 6
+		<br><br>
+		Posición (n): ?
+		<br><br>
+		Distancia (d): 3
+
+	</div>
+
+     <form>
+	     <input type="number" id="r3" placeholder="Respuesta">
+     </form>
+     <div class="rr" id="res3"></div>
+<button class="enviar" onclick="a3()">Enviar</button>
+
+    <script>
+
+    	function a3()
+    	{
+    		r3=parseInt(r3.value)
+    		if (r3==3)
+    		 {
+    		 	res3.innerHTML="<div class='rr'>Respuesta correcta</div>";
+    		 }
+    		 else
+    		 {
+    		 	res3.innerHTML="<div class='rr'>Respuesta incorrecta</div>";
+    		 }
+    	}
+    </script>
+</div>
+</div>
+</div>
+
+
+<div class="ca" id="cal">
+	<div class="ecua">an=a1+(n-1)*d
+		<br>
+		<br>
+<div class="ac4">Calcular término inicial</div>
+	<div class="dat4">
+		Término cualquiera (an): 20
+		<br><br>
+		Término incial (a1): ?
+		<br><br>
+		Posición (n): 8
+		<br><br>
+		Distancia (d): 2
+
+
+	</div>
+
+     <form>
+	     <input type="number" id="r4" placeholder="Respuesta">
+     </form>
+     <div class="rr" id="res4"></div>
+<button class="enviar" onclick="a4()">Enviar</button>
+
+    <script>
+
+    	function a4()
+    	{
+    		r4=parseInt(r4.value)
+    		if (r4==6)
+    		 {
+    		 	res4.innerHTML="<div class='rr'>Respuesta correcta</div>";
+    		 }
+    		 else
+    		 {
+    		 	res4.innerHTML="<div class='rr'>Respuesta incorrecta</div>";
+    		 }
+    	}
+    </script>
+</div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
